@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #504a4a, rgb(216, 255, 216));
+}
+
+main{
+    height: 400px;
+    width: 800px;
+    background-image: linear-gradient( 95.2deg, rgb(37, 194, 157) 26.8%, rgb(54, 169, 223) 64% );
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+/* styling first section */
+.title_container{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+label{
+    font-weight: bold;
+}
+
+/* styling second section */
+.amount_container{
+    margin-bottom:1.3rem ;
+}
+
+.amount_container > input[type="number"]{
+    width: 100%;
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* styling third section */
+.unit_container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.select_container > select{
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* styling the middle icon */
+.fa-2x > i{
+    margin-top: 80%;
+}
+
+/* styling the fourth container: Formula display */
+.formula_container{
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+.formula_container > .title{
+    background-color: black;
+    color: white;
+    font-size:0.9rem ;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formula_container > .content{
+    font-size: 1.2rem;
+}
+
+
+/* styling the fifth container */
+.result_container{
+    margin-bottom: 1.5rem;
+}
+
+.result_container > input[type="text"]{
+    border: 1px solid black;
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    outline: 0;
+}
+
+
+
+@media(max-width:816px){
+    main{
+        height: 300px;
+        width: 600px;
+        padding: 1rem;
+    }
+    .title_container{
+        margin-bottom: 0.5rem;
+    }
+    .amount_container{
+        margin-bottom:0.3rem ;
+    }
+    .unit_container{
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+    .formula_container{
+        margin-bottom: 0.4rem;
+    }
+    .result_container{
+        margin-bottom: 0.5rem;
+    }
+    .result_container > input[type="text"]{
+        padding: 0.4rem;
+        margin-top: 0.0rem;
+    }
+}
+@media (max-width : 650px) {
+    main{
+        width: 320px;
+    }
+}
